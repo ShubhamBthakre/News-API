@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo" onclick="reload()">
+                <img src="./Assest/logo.jpg" alt="company-logo" />
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-item" id="g20" onclick="navItemClick('g20')">G20</li>
+                    <li class="hover-links nav-item" id="politics" onclick="navItemClick('politics')">Politics</li>
+                    <li class="hover-links nav-item" id="entertainment" onclick="navItemClick('entertainment')">Entertainment</li>
+                    <li class="hover-links nav-item" id="automobile" onclick="navItemClick('automobile')">Automobile</li>
+                    <li class="hover-links nav-item" id="politics" onclick="navItemClick('politics')">politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="news-input" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        </div>
+        </div>
+    </main>
+
+    <template id="template-news-card">
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400" alt="news-image" id="newsImg">
+            </div>
+
+            <div class="card-content">
+                <h3 class="news-title" id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End gadget 2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam in,
+                    vero amet asperiores,
+                    explicabo ipsa accusantium error eius id iusto deleniti ut. Nesciunt, facilis illum voluptate
+                    consectetur quas nulla saepe.</p>
+            </div>
+
+
+        </div>
+    </template>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
